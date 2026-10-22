@@ -2,8 +2,9 @@ CS 255 DriverPass Portfolio
 
 This repository contains my work on the DriverPass project for CS 255: System Analysis and Design.
 
-Business Requirements Document (Project One)
-System Design Document (Project Two)
+- Business Requirements Document (Project One)
+  
+- System Design Document (Project Two)
 
 Reflection
 
