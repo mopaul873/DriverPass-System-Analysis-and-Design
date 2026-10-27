@@ -1,10 +1,52 @@
+# DriverPass: System Analysis and Design (CS 255)
 
-# CS 255 DriverPass Portfolio
+Requirements analysis and UML system design for **DriverPass**, a startup that helps students pass their DMV driving tests with online classes, practice tests, and scheduled on-the-road lessons.
 
-This repository contains my work on the DriverPass project for CS 255: System Analysis and Design.
+Built for **CS 255: System Analysis and Design** at Southern New Hampshire University.
 
-- **Business Requirements Document** (Project One)
-- **System Design Document** (Project Two)
+---
+
+## System Overview
+
+```mermaid
+flowchart LR
+    Customer([Customer]) -->|book, change, cancel lessons<br/>take practice tests| Sys
+    Secretary([Secretary]) -->|schedule lessons<br/>for customers| Sys
+    Owner([Owner · Liam]) -->|download reports<br/>disable packages| Sys
+    IT([IT Officer · Ian]) -->|reset or block<br/>user accounts| Sys
+    Driver([Driver]) -->|view schedule<br/>add lesson notes| Sys
+
+    subgraph Sys["DriverPass web system · cloud hosted"]
+        R[Reservations<br/>2-hour lessons]
+        T[Online classes and<br/>practice test progress]
+        A[Role-based access]
+        L[Activity log<br/>who made or changed what]
+    end
+
+    DMV[(DMV)] -->|rule and test updates| Sys
+```
+
+## Deliverables
+
+| Document | Contents |
+|---|---|
+| [Business Requirements Document](Business-Requirements-Document.docx) | Purpose, background, objectives, functional and nonfunctional requirements, assumptions, limitations, and a Gantt chart timeline |
+| [System Design Document](System-Design-Document.docx) | UML use case, activity, sequence, and class diagrams, plus technical requirements |
+
+## Key Requirements Captured
+
+- Schedule, change, and cancel **two-hour driving lessons**, each matched with a driver and a car
+- Track **online test progress** for each customer
+- **Log who made or changed every reservation**
+- Run on the **web in the cloud**, on both computers and phones
+- Give **different access levels** to customers, staff, and administrators
+- Stay up to date with **DMV rule changes**
+
+## Skills Demonstrated
+
+Requirements gathering from client interviews · functional vs. nonfunctional requirements · UML modeling (use case, activity, sequence, class) · Lucidchart · project scheduling
+
+---
 
 ## Reflection
 
